@@ -1,0 +1,306 @@
+body{
+  margin: 0;
+}
+header{
+  background-color: rgba(0, 128, 0, 0.458);
+}
+.encabezado img{
+  width: 100%;
+}
+.encabezado{
+  display: flex;
+}
+.indice{
+  display: flex;
+}
+.enlaces-menu{
+width: 100%;
+  list-style: none;
+}
+ul{
+  text-align: center;
+}
+li{
+display: inline-block;
+padding: 20px;
+margin-left: 80px;
+margin-right: 80px;
+}
+a{
+  justify-content: center;
+  text-decoration: none;
+}
+
+.enlaces-menu li:hover{
+  transform: scale(1.1);
+  background: rgb(209, 225, 227);
+  box-shadow:  0px 0px 0px 0px rgba(0, 0, 0, 0.5);
+  transition: .5s;
+  
+}
+.enlaces-menu li{font-size: 1.20em;}
+/*cartas*/
+.padre{
+  display: flex;
+}
+.familia{
+  justify-content: space-between;
+   width: 50%;
+}
+.card{
+background-color: aqua;
+margin-top: 30px;
+margin-left: 20px;
+
+}
+
+.titulo h1{
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 2px;
+width: 50%;
+}
+.carta{
+  display: flex;
+}
+.carta img{
+
+width: 50%;
+height: 150px;
+padding: 20px;
+
+}
+
+.carta p{
+width: 50%;
+padding: 20px;
+text-align: center;
+}
+
+
+
+
+/*seccion formulario*/
+
+
+:root{
+  --colorTextos: #fff;
+}
+
+.formulario {
+  width: 400px;
+  text-align: right;
+  height: 500px;
+}
+
+.form h1{
+  text-align: center;
+  justify-content: center;
+  margin: 10px 0;
+  font-weight: 800;
+  color: #fff;
+}
+
+form{
+  margin-top: 20px;
+  margin-left: 120px;
+  background: #666666;
+  width: 350px;
+  padding: 10px 0;
+  border-radius: 10px;
+  box-shadow: 0 0 6px 0 rgba(255, 255, 255, 0.8);
+  margin-bottom: 10px;
+}
+
+
+.formulario{
+  width: 50%;
+  height: 100%;
+  padding: 50px auto;
+  
+}
+
+form .grupo{
+  position: relative;
+  margin: 45px;
+}
+
+input, textarea{
+  background: none;
+  color: #c6c6c6;
+  font-size: 18px;
+  padding: 10px 10px 10px 5px ;
+  display: block;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid var(--colorTextos);
+  resize: none;
+}
+
+input:focus,textarea:focus{
+  outline: none;
+  color: rgb(94,93,93);
+  
+
+}
+
+input:focus~label, input:valid~label, textarea:focus~label, textarea:valid~label{
+  position: absolute;
+  top: -14px;
+  font-size: 12px;
+  color: #2196f3;
+}
+
+label{
+  color: var(--colorTextos);
+  font-size: 16px;
+  position: absolute;
+  left: 5px;
+  top: 10px;
+  transition: 0.5s ease all;
+  pointer-events: none;
+}
+
+
+input:focus~.barra::before, textarea:focus~.barra::before{
+  width: 100%;
+}
+.barra{
+  position: relative;
+  display: block;
+  width: 100%;
+}
+.barra::before{
+  content: '';
+  height: 2px;
+  width: 0;
+  bottom: 0;
+  position: absolute;
+  background: linear-gradient(to right, #6A82FB, #FC5C7D );
+  transition: 0.3s ease all;
+  left: 0%;
+}
+
+.form button{
+  background: #FC5C7D;
+  background: -webkit-linear-gradient(to right, #6A82FB, #FC5C7D);
+  background: linear-gradient(to right, #6A82FB, #FC5C7D );
+  display: block;
+  width: 100px;
+  height: 40px;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  margin: 10px auto;
+  cursor: pointer;
+}
+
+/*footer*/
+
+footer{
+  position: absoluta;
+  bottom: 0;
+  left: 0;
+  height: fit-content;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color:#121212;
+  color: white;
+}
+
+.copyright-container{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.copyright{
+  font-size: 12px;
+  opacity: 0.7;
+  font-weight: 400;
+  padding: 10px 0;
+}
+
+.footer-menus{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 40%;
+}
+
+.footer-container{
+  height: fit-content;
+  width: 100%;
+  padding: 3rem 6rem;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.footer-content-container{
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+footer .website-logo{
+  margin-bottom: 1.2rem;
+  font-size: calc(1vw +20px);
+}
+
+.footer-info, .menu-item-footer{
+  margin: 0.2rem 0;
+  opacity: 0.7;
+  color: white;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+.menu-item-footer:hover{
+  opacity: 1;
+}
+
+.menu-title{
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 1.2rem;
+}
+
+.social-container a{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  width: 100%;
+}
+
+.social-link {
+  height: 100%;
+  width: 30px;
+  background-image: url();
+  background-size: 70%;
+  background-position: center;
+  margin-right: 1rem;
+  background-repeat: no-repeat;
+}
+.social-link:hover{
+  opacity: 0.7;
+}
+
+footer .social-link:nth-of-type(2){
+  background-image: url();
+}
+
+footer .social-link:nth-of-type(3){
+  background-image: url();
+}
+
